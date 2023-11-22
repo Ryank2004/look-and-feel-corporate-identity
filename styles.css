@@ -85,7 +85,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
     /* Verberg het hamburgermenu op tablet/desktop */
     .hamburger-menu {
         display: none;
@@ -99,7 +99,7 @@
     }
 
     .site-nav-grid ul li {
-        margin-right: 20px; /* Pas dit aan naar je voorkeur */
+        margin-right: 100px; /* Pas dit aan naar je voorkeur */
     }
 }
 
