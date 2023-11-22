@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --primaireKleur: #ffffff;
+    --hoverKleur: #46aa64;
+    --secundaireKleur: #0a3250;
+  }
+
+  @font-face {
+    font-family: "AvantGardeGothicMedium";
+    src: url(./Fonts/ITC\ Avant\ Garde\ Gothic\ Medium.otf);
+  }
+
+  
+  .site-nav-grid {
+    font-family: "AvantGardeGothicMedium";
+    background-color: var(--secundaireKleur);
+    color: var(--primaireKleur);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.site-nav-grid h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--primaireKleur);
+    padding-left: 40px;
+}
+
+.site-nav-grid ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav-grid ul li {
+    display: flex;
+    margin-right: 60px
+}
+
+.site-nav-grid ul li a {
+    color: var(--primaireKleur);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.site-nav-grid ul li a:hover {
+    color: var(--green);
+}
+
+
+/* Basisstijlen voor mobiel */
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primaireKleur);
+    margin: 5px 0;
+}
+
+.site-nav-grid ul {
+    display: none;
+}
+
+/* Stijlen voor als het hamburgermenu is geopend */
+.menu-open .site-nav-grid ul {
+    display: block; /* of flex */
+    position: absolute;
+    top: 80px; /* Pas aan aan de hoogte van je nav-bar */
+    left: 0;
+    width: 100%;
+    background-color: var(--secundaireKleur);
+}
+
+
+@media screen and (min-width: 768px) {
+    /* Verberg het hamburgermenu op tablet/desktop */
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Toon en stijl de navigatielinks voor grotere schermen */
+    .site-nav-grid ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-nav-grid ul li {
+        margin-right: 20px; /* Pas dit aan naar je voorkeur */
+    }
+}
+
+
