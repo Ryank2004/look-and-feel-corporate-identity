@@ -24,43 +24,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .site-nav-grid h1 {
     margin: 0;
     font-size: 1.5rem;
     color: var(--primaireKleur);
-    padding-left: 40px;
+    padding-left: 30px;
 }
-
-.site-nav-grid ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.site-nav-grid ul li {
-    display: flex;
-    margin-right: 60px
-}
-
-.site-nav-grid ul li a {
-    color: var(--primaireKleur);
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.site-nav-grid ul li a:hover {
-    color: var(--green);
-}
-
 
 /* Basisstijlen voor mobiel */
 .hamburger-menu {
     display: block;
     cursor: pointer;
+    padding-right: 30px;
 }
 
 .hamburger-menu .line {
@@ -73,16 +50,39 @@
 .site-nav-grid ul {
     display: none;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%; /* Full width */
+}
 
-/* Stijlen voor als het hamburgermenu is geopend */
-.menu-open .site-nav-grid ul {
-    display: block; /* of flex */
+.image-container {
+    position: relative; /* Needed for absolute positioning of the overlay */
+    width: 100%;
+    max-width: 630px; /* Adjust as needed */
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.header-overlay {
     position: absolute;
-    top: 80px; /* Pas aan aan de hoogte van je nav-bar */
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--secundaireKleur);
+    padding: 10px; /* Adjust as needed */
+    color:var(--hoverKleur);
+    text-align: center; 
 }
+
+.header-overlay h2 {
+    margin: 0;
+    padding: 10px; /* Adjust for spacing */
+    font-size: 30px;
+}
+
 
 
 @media screen and (min-width: 630px) {
@@ -96,10 +96,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        list-style: none;
     }
 
     .site-nav-grid ul li {
-        margin-right: 100px; /* Pas dit aan naar je voorkeur */
+        margin-right: 60px; /* Pas dit aan naar je voorkeur */
+        
+    }
+    .site-nav-grid ul li a {
+    color: var(--primaireKleur);
+    text-decoration: none;
+    font-size: 1rem; /* Adjust as needed */
+}
+
+    .site-nav-grid ul li a:hover {
+    color: var(--hoverKleur); /* Change color on hover */
+}
+    .site-nav-grid h1 {
+    padding-left: 60px;
+  
     }
 }
 
