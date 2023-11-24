@@ -6,8 +6,9 @@
 
 :root {
     --primaireKleur: #ffffff;
-    --hoverKleur: #46aa64;
     --secundaireKleur: #0a3250;
+    --tertiaireKleur: #46aa64;
+    --mainFont: "AvantGardeGothicMedium";
   }
 
   @font-face {
@@ -73,7 +74,7 @@
     left: 0;
     width: 100%;
     padding: 10px; /* Adjust as needed */
-    color:var(--hoverKleur);
+    color:var(--tertiaireKleur);
     text-align: center; 
 }
 
@@ -110,12 +111,42 @@
 }
 
     .site-nav-grid ul li a:hover {
-    color: var(--hoverKleur); /* Change color on hover */
+    color: var(--tertiaireKleur); /* Change color on hover */
 }
     .site-nav-grid h1 {
     padding-left: 60px;
   
     }
 }
+
+/* begin 'marktplaats' knoppen // Gezocht en aangeboden */
+.marktplaats h3 {
+    font-family: var(--mainFont);
+    font-weight: lighter;
+}
+
+
+.marktplaats h3:focus-within {
+    color: var(--tertiaireKleur);
+}
+
+.marktplaats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aangeboden, .gezocht {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.6em 0 1em 0;
+    width: 50vw;
+}
+
+.aangeboden:focus-within, .gezocht:focus-within {
+    --bottomBorder: 3px solid var(--tertiaireKleur);
+    border-bottom: var(--bottomBorder)
+}
+
 
 
