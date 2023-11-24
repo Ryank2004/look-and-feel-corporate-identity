@@ -25,15 +25,21 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.site-nav-grid h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: var(--primaireKleur);
-    padding-left: 30px;
+.spacer {
+    width: 30px;
+    height: 60px;
+    padding-left: 60px;
+    visibility: hidden;
 }
 
-/* Basisstijlen voor mobiel */
+.site-nav-grid h1 {
+    margin: auto;
+    font-size: 1.5rem;
+    color: var(--primaireKleur);
+    display: flex;
+    
+}
+
 .hamburger-menu {
     display: block;
     cursor: pointer;
@@ -77,11 +83,12 @@
     text-align: center; 
 }
 
-.header-overlay h2 {
+ .header-overlay h2 {
     margin: 0;
     padding: 10px; /* Adjust for spacing */
     font-size: 30px;
-}
+    visibility: hidden;
+} 
 
 
 
