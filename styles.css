@@ -5,9 +5,9 @@
   }
 
 :root {
-    --primaireKleur: #ffffff;
-    --secundaireKleur: #0a3250;
-    --tertiaireKleur: #46aa64;
+    --primairyColor: #ffffff;
+    --secondaryColor: #0a3250;
+    --thirdColor: #46aa64;
     --mainFont: "AvantGardeGothicMedium";
   }
 
@@ -19,25 +19,22 @@
   
   .site-nav-grid {
     font-family: "AvantGardeGothicMedium";
-    background-color: var(--secundaireKleur);
-    color: var(--primaireKleur);
-    height: 80px;
+    background-color: var(--secondaryColor);
+    color: var(--primairyColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.spacer {
-    width: 30px;
-    height: 60px;
-    padding-left: 60px;
-    visibility: hidden;
+    box-shadow: 0 0 0.75rem 0.15rem rgba(26, 42, 52, 0.5);
 }
 
 .site-nav-grid h1 {
     margin: auto;
     font-size: 1.5rem;
-    color: var(--primaireKleur);
+    color: var(--primairyColor);
     display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
     
 }
 
@@ -50,7 +47,7 @@
 .hamburger-menu .line {
     width: 30px;
     height: 3px;
-    background-color: var(--primaireKleur);
+    background-color: var(--primairyColor);
     margin: 5px 0;
 }
 
@@ -59,7 +56,10 @@
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 100%; /* Full width */
+    grid-template-columns: 100%;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 .image-container {
@@ -72,6 +72,7 @@
 .image-container img {
     width: 100%;
     height: auto;
+    border-radius: 0.7em;
 }
 
 .header-overlay {
@@ -80,7 +81,7 @@
     left: 0;
     width: 100%;
     padding: 10px; /* Adjust as needed */
-    color:var(--tertiaireKleur);
+    color:var(--thirdColor);
     text-align: center; 
 }
 
@@ -112,13 +113,13 @@
         
     }
     .site-nav-grid ul li a {
-    color: var(--primaireKleur);
+    color: var(--primairyColor);
     text-decoration: none;
     font-size: 1rem; /* Adjust as needed */
 }
 
     .site-nav-grid ul li a:hover {
-    color: var(--tertiaireKleur); /* Change color on hover */
+    color: var(--thirdColor); /* Change color on hover */
 }
     .site-nav-grid h1 {
     padding-left: 60px;
@@ -134,7 +135,7 @@
 
 
 .aangeboden.active h3, .gezocht.active h3 {
-    color: var(--tertiaireKleur);
+    color: var(--thirdColor);
 }
 
 
@@ -152,11 +153,11 @@
 }
 
 .aangeboden:focus-within, .gezocht:focus-within {
-    --bottomBorder: 3px solid var(--tertiaireKleur);
+    --bottomBorder: 3px solid var(--thirdColor);
     border-bottom: var(--bottomBorder)
 }
 .aangeboden.active, .gezocht.active {
-    border-bottom: 3px solid var(--tertiaireKleur);
+    border-bottom: 3px solid var(--thirdColor);
 }
 
 
