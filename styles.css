@@ -133,9 +133,10 @@
 }
 
 
-.marktplaats h3:focus-within {
+.aangeboden.active h3, .gezocht.active h3 {
     color: var(--tertiaireKleur);
 }
+
 
 .marktplaats {
     display: flex;
@@ -153,6 +154,9 @@
 .aangeboden:focus-within, .gezocht:focus-within {
     --bottomBorder: 3px solid var(--tertiaireKleur);
     border-bottom: var(--bottomBorder)
+}
+.aangeboden.active, .gezocht.active {
+    border-bottom: 3px solid var(--tertiaireKleur);
 }
 
 
