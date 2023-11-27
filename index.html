@@ -8,8 +8,12 @@
     <title>BUURT</title>
 </head>
 <body>
+
+   
     <nav class="site-nav-grid">
-        <h1>BUURT</h1>
+        <div class="spacer"></div>
+            <h1>BUURT</h1>
+
         <ul>
             <li><a href="#">icon1</a></li>
             <li><a href="#">icon2</a></li>
@@ -32,10 +36,10 @@
     </section>
 
     <section class="marktplaats">
-        <div class="aangeboden">
+        <div class="aangeboden active" onclick="setActive('aangeboden')">
             <h3 tabindex="0">Aangeboden</h3>
         </div>
-        <div class="gezocht">
+        <div class="gezocht" onclick="setActive('gezocht')">
             <h3 tabindex="0">Gezocht</h3>
         </div>
     </section>
@@ -74,6 +78,8 @@
         </div>
     </footer>
  
+    
+    
     
 </body>
 </html>
