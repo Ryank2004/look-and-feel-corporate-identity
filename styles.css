@@ -5,9 +5,9 @@
 }
 
 :root {
-  --primaireKleur: #ffffff;
-  --secundaireKleur: #0a3250;
-  --tertiaireKleur: #46aa64;
+  --primairyColor: #ffffff;
+  --secondaryColor: #0a3250;
+  --thirdColor: #46aa64;
   --mainFont: "AvantGardeGothicMedium";
 }
 
@@ -18,18 +18,17 @@
 
 .site-nav-grid {
   font-family: "AvantGardeGothicMedium";
-  background-color: var(--secundaireKleur);
-  color: var(--primaireKleur);
-  height: 80px;
+  background-color: var(--secondaryColor);
+  color: var(--primairyColor);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 0 0.75rem 0.15rem rgba(26, 42, 52, 0.5);
 }
 
 .site-nav-grid h1 {
-  margin: 0;
   font-size: 1.5rem;
-  color: var(--primaireKleur);
   padding-left: 30px;
 }
 
@@ -37,13 +36,12 @@
 .hamburger-menu {
   display: block;
   cursor: pointer;
-  padding-right: 30px;
 }
 
 .hamburger-menu .line {
   width: 30px;
   height: 3px;
-  background-color: var(--primaireKleur);
+  background-color: var(--primairyColor);
   margin: 5px 0;
 }
 
@@ -58,61 +56,14 @@
 .image-container {
   position: relative; /* Needed for absolute positioning of the overlay */
   width: 100%;
-  max-width: 630px; /* Adjust as needed */
-  margin: auto;
+  max-width: 630px; /* Adjust as needed */ 
+  padding: 1.4em;
 }
 
 .image-container img {
   width: 100%;
   height: auto;
-}
-
-.header-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px; /* Adjust as needed */
-  color: var(--tertiaireKleur);
-  text-align: center;
-}
-
-.header-overlay h2 {
-  margin: 0;
-  padding: 10px; /* Adjust for spacing */
-  font-size: 30px;
-}
-
-@media screen and (min-width: 630px) {
-  /* Verberg het hamburgermenu op tablet/desktop */
-  .hamburger-menu {
-    display: none;
-  }
-
-  /* Toon en stijl de navigatielinks voor grotere schermen */
-  .site-nav-grid ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-
-  .site-nav-grid ul li {
-    margin-right: 60px; /* Pas dit aan naar je voorkeur */
-  }
-  .site-nav-grid ul li a {
-    color: var(--primaireKleur);
-    text-decoration: none;
-    font-size: 1rem; /* Adjust as needed */
-  }
-
-    .site-nav-grid ul li a:hover {
-    color: var(--thirdColor); /* Change color on hover */
-}
-    .site-nav-grid h1 {
-    padding-left: 60px;
-  
-    }
+  border-radius: 1.3em;
 }
 
 /* begin 'marktplaats' knoppen // Gezocht en aangeboden */
@@ -122,7 +73,7 @@
 }
 
 .marktplaats h3:focus-within {
-  color: var(--tertiaireKleur);
+  color: var(--thirdColor);
 }
 
 .marktplaats {
@@ -141,9 +92,43 @@
 
 .aangeboden:focus-within,
 .gezocht:focus-within {
-  --bottomBorder: 3px solid var(--tertiaireKleur);
+  --bottomBorder: 3px solid var(--thirdColor);
   border-bottom: var(--bottomBorder);
 }
+
+.aangeboden.active, .gezocht.active {
+  color: var(--thirdColor); /* Make the text green */
+  border-bottom: 3px solid var(--thirdColor); /* Green underline */
+}
+
+@media screen and (min-width: 630px) {
+  /* Verberg het hamburgermenu op tablet/desktop */
+  .hamburger-menu {
+    display: none;
+  }
+
+  .site-nav-grid ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .site-nav-grid ul li {
+    margin-right: 60px;
+  }
+  .site-nav-grid ul li a {
+    color: var(--primairyColor);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+    .site-nav-grid ul li a:hover {
+    color: var(--thirdColor); /* Change color on hover */
+  } 
+}
+
+
 
 /* 
 
@@ -159,8 +144,8 @@ dit moet nog gebeuren voor footer:
 footer {
   display: flex;
   flex-wrap: wrap;
-  background: var(--secundaireKleur);
-  color: var(--primaireKleur);
+  background: var(--secondaryColor);
+  color: var(--primairyColor);
   margin-top: auto;
   padding: 60px 10%;
 }
@@ -188,7 +173,7 @@ footer ul {
   position: absolute;
   left: 0;
   bottom: -6px;
-  background-color: var(--tertiaireKleur);
+  background-color: var(--thirdColor);
   height: 2px;
   width: 40px;
 }
@@ -201,13 +186,13 @@ ul li a {
   display: block;
   font-size: 19px;
   text-transform: capitalize;
-  color: var(--tertiaireKleur);
+  color: var(--thirdColor);
   text-decoration: none;
   transition: 0.2s;
 }
 
 li a:hover {
-  color: var(--primaireKleur);
+  color: var(--primairyColor);
   padding-left: 2px;
 }
 
@@ -216,7 +201,7 @@ li a:hover {
   height: 44px;
   width: 44px;
   color: white;
-  background-color: var(--tertiaireKleur);
+  background-color: var(--thirdColor);
   margin: 0px 8px 8px 0px;
   text-align: center;
   line-height: 44px;
