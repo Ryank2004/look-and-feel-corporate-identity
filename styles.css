@@ -121,9 +121,13 @@
     .site-nav-grid ul li a:hover {
     color: var(--thirdColor); /* Change color on hover */
 }
+
     .site-nav-grid h1 {
-    padding-left: 60px;
-  
+        margin-left: 0;
+        font-size: 1.5rem;
+        color: var(--primairyColor);
+        display:flex;
+        padding-left: 30px;
     }
 }
 
