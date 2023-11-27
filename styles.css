@@ -1,168 +1,247 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
-    --primairyColor: #ffffff;
-    --secondaryColor: #0a3250;
-    --thirdColor: #46aa64;
-    --mainFont: "AvantGardeGothicMedium";
-  }
+  --primaireKleur: #ffffff;
+  --secundaireKleur: #0a3250;
+  --tertiaireKleur: #46aa64;
+  --mainFont: "AvantGardeGothicMedium";
+}
 
-  @font-face {
-    font-family: "AvantGardeGothicMedium";
-    src: url(./Fonts/ITC\ Avant\ Garde\ Gothic\ Medium.otf);
-  }
+@font-face {
+  font-family: "AvantGardeGothicMedium";
+  src: url(./Fonts/ITC\ Avant\ Garde\ Gothic\ Medium.otf);
+}
 
-  
-  .site-nav-grid {
-    font-family: "AvantGardeGothicMedium";
-    background-color: var(--secondaryColor);
-    color: var(--primairyColor);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 0 0.75rem 0.15rem rgba(26, 42, 52, 0.5);
+.site-nav-grid {
+  font-family: "AvantGardeGothicMedium";
+  background-color: var(--secundaireKleur);
+  color: var(--primaireKleur);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-nav-grid h1 {
-    margin: auto;
-    font-size: 1.5rem;
-    color: var(--primairyColor);
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 60px;
-    
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--primaireKleur);
+  padding-left: 30px;
 }
 
+/* Basisstijlen voor mobiel */
 .hamburger-menu {
-    display: block;
-    cursor: pointer;
-    padding-right: 30px;
+  display: block;
+  cursor: pointer;
+  padding-right: 30px;
 }
 
 .hamburger-menu .line {
-    width: 30px;
-    height: 3px;
-    background-color: var(--primairyColor);
-    margin: 5px 0;
+  width: 30px;
+  height: 3px;
+  background-color: var(--primaireKleur);
+  margin: 5px 0;
 }
 
 .site-nav-grid ul {
-    display: none;
+  display: none;
 }
 .grid-container {
-    display: grid;
-    grid-template-columns: 100%;
-    padding-top: 1.5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+  display: grid;
+  grid-template-columns: 100%; /* Full width */
 }
 
 .image-container {
-    position: relative; /* Needed for absolute positioning of the overlay */
-    width: 100%;
-    max-width: 630px; /* Adjust as needed */
-    margin: auto;
+  position: relative; /* Needed for absolute positioning of the overlay */
+  width: 100%;
+  max-width: 630px; /* Adjust as needed */
+  margin: auto;
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.7em;
+  width: 100%;
+  height: auto;
 }
 
 .header-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px; /* Adjust as needed */
-    color:var(--thirdColor);
-    text-align: center; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; /* Adjust as needed */
+  color: var(--tertiaireKleur);
+  text-align: center;
 }
 
- .header-overlay h2 {
-    margin: 0;
-    padding: 10px; /* Adjust for spacing */
-    font-size: 30px;
-    visibility: hidden;
-} 
-
-
+.header-overlay h2 {
+  margin: 0;
+  padding: 10px; /* Adjust for spacing */
+  font-size: 30px;
+}
 
 @media screen and (min-width: 630px) {
-    /* Verberg het hamburgermenu op tablet/desktop */
-    .hamburger-menu {
-        display: none;
-    }
+  /* Verberg het hamburgermenu op tablet/desktop */
+  .hamburger-menu {
+    display: none;
+  }
 
-    /* Toon en stijl de navigatielinks voor grotere schermen */
-    .site-nav-grid ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-    }
+  /* Toon en stijl de navigatielinks voor grotere schermen */
+  .site-nav-grid ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
 
-    .site-nav-grid ul li {
-        margin-right: 60px; /* Pas dit aan naar je voorkeur */
-        
-    }
-    .site-nav-grid ul li a {
-    color: var(--primairyColor);
+  .site-nav-grid ul li {
+    margin-right: 60px; /* Pas dit aan naar je voorkeur */
+  }
+  .site-nav-grid ul li a {
+    color: var(--primaireKleur);
     text-decoration: none;
     font-size: 1rem; /* Adjust as needed */
-}
+  }
 
     .site-nav-grid ul li a:hover {
     color: var(--thirdColor); /* Change color on hover */
 }
-
     .site-nav-grid h1 {
-        margin-left: 0;
-        font-size: 1.5rem;
-        color: var(--primairyColor);
-        display:flex;
-        padding-left: 30px;
+    padding-left: 60px;
+  
     }
 }
 
 /* begin 'marktplaats' knoppen // Gezocht en aangeboden */
 .marktplaats h3 {
-    font-family: var(--mainFont);
-    font-weight: lighter;
+  font-family: var(--mainFont);
+  font-weight: lighter;
 }
 
-
-.aangeboden.active h3, .gezocht.active h3 {
-    color: var(--thirdColor);
+.marktplaats h3:focus-within {
+  color: var(--tertiaireKleur);
 }
-
 
 .marktplaats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.aangeboden, .gezocht {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0.6em 0 1em 0;
-    width: 50vw;
+.aangeboden,
+.gezocht {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.6em 0 1em 0;
+  width: 50vw;
 }
 
-.aangeboden:focus-within, .gezocht:focus-within {
-    --bottomBorder: 3px solid var(--thirdColor);
-    border-bottom: var(--bottomBorder)
-}
-.aangeboden.active, .gezocht.active {
-    border-bottom: 3px solid var(--thirdColor);
+.aangeboden:focus-within,
+.gezocht:focus-within {
+  --bottomBorder: 3px solid var(--tertiaireKleur);
+  border-bottom: var(--bottomBorder);
 }
 
+/* 
 
+dit moet nog gebeuren voor footer:
+- typgografie 
+- kleuren 
+- eventueel aanpassingen gebasseerd op feedback/suggesties 
+- streepje onder h4 nog aanpassen
+*/
 
+/*begin footer */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--secundaireKleur);
+  color: var(--primaireKleur);
+  margin-top: auto;
+  padding: 60px 10%;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%; /* Voor responsive maken: bij 740px 50% en bij 555px 100% doen */
+}
+
+.footer-col h4 {
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+/* voor streepje onder h4 kopje.(Streepje vedwijnt, als beeld kleiner is dan 740px)*/
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: var(--tertiaireKleur);
+  height: 2px;
+  width: 40px;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+ul li a {
+  display: block;
+  font-size: 19px;
+  text-transform: capitalize;
+  color: var(--tertiaireKleur);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+li a:hover {
+  color: var(--primaireKleur);
+  padding-left: 2px;
+}
+
+.links a {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  color: white;
+  background-color: var(--tertiaireKleur);
+  margin: 0px 8px 8px 0px;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+/*einde footer */
+
+/* Respinsive footer */
+
+@media (max-width: 740px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .footer-col h4::before {
+    all: unset;
+  }
+
+  @media (max-width: 555px) {
+    .footer-col {
+      width: 100%;
+    }
+  }
+}
+
+/* einde responsive footer */
