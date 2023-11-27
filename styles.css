@@ -120,33 +120,51 @@
 }
 
 /* begin 'marktplaats' knoppen // Gezocht en aangeboden */
-.marktplaats h3 {
-    font-family: var(--mainFont);
-    font-weight: lighter;
-}
+section.marketplace { 
+    & h3 {
+        font-family: var(--mainFont);
+        font-weight: lighter;
+    }
 
 
-.marktplaats h3:focus-within {
-    color: var(--tertiaireKleur);
+    & h3:focus-within {
+        color: var(--tertiaireKleur);
+    }
+
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5vh;
+    }
+
+    & li {
+        display: flex;
+    }
+
+    & img {
+        width: 50vw;
+    }
 }
 
-.marktplaats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .offered, .wanted {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0.6em 0 1em 0;
+        width: 50vw;
+    }
 
-.aangeboden, .gezocht {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0.6em 0 1em 0;
-    width: 50vw;
-}
+    .offered:focus-within, .wanted:focus-within {
+        --bottomBorder: 3px solid var(--tertiaireKleur);
+        border-bottom: var(--bottomBorder)
+    }
 
-.aangeboden:focus-within, .gezocht:focus-within {
-    --bottomBorder: 3px solid var(--tertiaireKleur);
-    border-bottom: var(--bottomBorder)
-}
 
 
 
