@@ -55,8 +55,13 @@ nav {
 }
 
 .grid-container {
+  & {
   display: grid;
   grid-template-columns: 100%; /* Full width */
+}
+& .image-containerGroot {
+ display: none;
+}
 }
 
 .image-container {
@@ -74,7 +79,8 @@ nav {
   }
 }
 
-/* begin 'marketplace' knoppen // gezocht en aangeboden */
+
+/* begin 'marketplace' knoppen // wanted en aangeboden */
 .marketplace { 
   & {
     display: flex;
@@ -86,9 +92,10 @@ nav {
     font-family: var(--main-font);
     font-weight: lighter;
   }
-  & h3:focus-within {
-    color: var(--third-color);
-  }
+}
+
+.marketplace h3:focus-within {
+  color: var(--third-color);
 }
 
 .offered,
@@ -142,9 +149,38 @@ nav {
       color: var(--third-color); /* Change color on hover */
     } 
   }
+  
+  .grid-container .image-container {
+    display: none;
+  }
+
+  .grid-container .image-containerGroot {
+    display: block; /* Now targeting the correct container */
+    position: relative;
+    width: 100%;
+    min-width: 630px;
+    max-width: 960px;
+    padding: 1.4em;
+  }
+
+  .grid-container .image-containerGroot img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.3em;
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  /*CSS voor desktop */
+
+
+
+  
 }
 
 /* 
+
 dit moet nog gebeuren voor footer:
 - typgografie <<<
 - kleuren 
