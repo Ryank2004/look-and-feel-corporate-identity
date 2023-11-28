@@ -74,8 +74,8 @@ nav {
   }
 }
 
-/* begin 'marktplaats' knoppen // Gezocht en aangeboden */
-.marktplaats { 
+/* begin 'marketplace' knoppen // wanted en aangeboden */
+.marketplace { 
   & {
     display: flex;
     justify-content: center;
@@ -88,12 +88,12 @@ nav {
   }
 }
 
-.marktplaats h3:focus-within {
+.marketplace h3:focus-within {
   color: var(--third-color);
 }
 
-.aangeboden,
-.gezocht {
+.offered,
+.wanted {
   display: flex;
   justify-content: space-evenly;
   padding: 0.6em 0 1em 0;
@@ -101,13 +101,13 @@ nav {
   box-shadow: 0 -0.2rem 0.4rem -0.1rem rgba(140, 161, 174, 0.5);  
 }
 
-.aangeboden:focus-within,
-.gezocht:focus-within {
+.offered:focus-within,
+.wanted:focus-within {
   --bottomBorder: 3px solid var(--third-color);
   border-bottom: var(--bottomBorder);
 }
 
-.aangeboden.active, .gezocht.active {
+.offered.active, .wanted.active {
   color: var(--third-color); /* Make the text green */
   border-bottom: 3px solid var(--third-color); /* Green underline */
 }
