@@ -74,7 +74,7 @@ nav {
   }
 }
 
-/* begin 'marketplace' knoppen // wanted en aangeboden */
+/* begin 'marketplace' knoppen // gezocht en aangeboden */
 .marketplace { 
   & {
     display: flex;
@@ -86,10 +86,9 @@ nav {
     font-family: var(--main-font);
     font-weight: lighter;
   }
-}
-
-.marketplace h3:focus-within {
-  color: var(--third-color);
+  & h3:focus-within {
+    color: var(--third-color);
+  }
 }
 
 .offered,
@@ -144,8 +143,8 @@ nav {
     } 
   }
 }
-/* 
 
+/* 
 dit moet nog gebeuren voor footer:
 - typgografie <<<
 - kleuren 
