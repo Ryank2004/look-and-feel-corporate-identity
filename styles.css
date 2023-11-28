@@ -148,6 +148,19 @@ nav {
     & ul li a:hover {
       color: var(--third-color); /* Change color on hover */
     } 
+
+    & ul li a::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #2aad51;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    & ul li a:hover::after {
+      width: 100%;
+    }
   }
   
   .grid-container .image-container {
