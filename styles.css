@@ -5,10 +5,10 @@
 }
 
 :root {
-  --primairyColor: #ffffff;
-  --secondaryColor: #0a3250;
-  --thirdColor: #46aa64;
-  --mainFont: "AvantGardeGothicMedium";
+  --primary-color: #ffffff;
+  --secondary-color: #0a3250;
+  --third-color: #46aa64;
+  --main-font: "AvantGardeGothicMedium";
 }
 
 @font-face {
@@ -18,8 +18,8 @@
 
 .site-nav-grid {
   font-family: "AvantGardeGothicMedium";
-  background-color: var(--secondaryColor);
-  color: var(--primairyColor);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +41,7 @@
 .hamburger-menu .line {
   width: 30px;
   height: 3px;
-  background-color: var(--primairyColor);
+  background-color: var(--primary-color);
   margin: 5px 0;
 }
 
@@ -67,58 +67,13 @@
 }
 
 /* begin 'marktplaats' knoppen // Gezocht en aangeboden */
-section.marketplace { 
-    & h3 {
-        font-family: var(--mainFont);
-        font-weight: lighter;
-    }
-
-
-    & h3:focus-within {
-        color: var(--tertiaireKleur);
-    }
-
-    & {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    & ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 5vh;
-    }
-
-    & li {
-        display: flex;
-    }
-
-    & img {
-        width: 50vw;
-    }
-}
-
-    .offered, .wanted {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0.6em 0 1em 0;
-        width: 50vw;
-    }
-
-    .offered:focus-within, .wanted:focus-within {
-        --bottomBorder: 3px solid var(--tertiaireKleur);
-        border-bottom: var(--bottomBorder)
-    }
-
 .marktplaats h3 {
-  font-family: var(--mainFont);
+  font-family: var(--main-font);
   font-weight: lighter;
 }
 
 .marktplaats h3:focus-within {
-  color: var(--thirdColor);
+  color: var(--third-color);
 }
 
 .marktplaats {
@@ -139,13 +94,13 @@ section.marketplace {
 
 .aangeboden:focus-within,
 .gezocht:focus-within {
-  --bottomBorder: 3px solid var(--thirdColor);
+  --bottomBorder: 3px solid var(--third-color);
   border-bottom: var(--bottomBorder);
 }
 
 .aangeboden.active, .gezocht.active {
-  color: var(--thirdColor); /* Make the text green */
-  border-bottom: 3px solid var(--thirdColor); /* Green underline */
+  color: var(--third-color); /* Make the text green */
+  border-bottom: 3px solid var(--third-color); /* Green underline */
 }
 
 @media screen and (min-width: 630px) {
@@ -169,13 +124,13 @@ section.marketplace {
     margin-right: 60px;
   }
   .site-nav-grid ul li a {
-    color: var(--primairyColor);
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 1rem;
   }
 
     .site-nav-grid ul li a:hover {
-    color: var(--thirdColor); /* Change color on hover */
+    color: var(--third-color); /* Change color on hover */
   } 
 }
 
@@ -195,10 +150,11 @@ dit moet nog gebeuren voor footer:
 footer {
   display: flex;
   flex-wrap: wrap;
-  background: var(--secondaryColor);
-  color: var(--primairyColor);
+  background: var(--secondary-color);
+  color: var(--primary-color);
   margin-top: auto;
   padding: 60px 10%;
+  font-family: var(--main-font);
 }
 
 footer ul {
@@ -224,7 +180,7 @@ footer ul {
   position: absolute;
   left: 0;
   bottom: -6px;
-  background-color: var(--thirdColor);
+  background-color: var(--third-color);
   height: 2px;
   width: 40px;
 }
@@ -237,13 +193,13 @@ ul li a {
   display: block;
   font-size: 19px;
   text-transform: capitalize;
-  color: var(--thirdColor);
+  color: var(--third-color);
   text-decoration: none;
   transition: 0.2s;
 }
 
 li a:hover {
-  color: var(--primairyColor);
+  color: var(--primary-color);
   padding-left: 2px;
 }
 
@@ -252,7 +208,7 @@ li a:hover {
   height: 44px;
   width: 44px;
   color: white;
-  background-color: var(--thirdColor);
+  background-color: var(--third-color);
   margin: 0px 8px 8px 0px;
   text-align: center;
   line-height: 44px;
@@ -261,7 +217,7 @@ li a:hover {
 }
 /*einde footer */
 
-/* Respinsive footer */
+/* Responsive footer */
 
 @media (max-width: 740px) {
   .footer-col {
