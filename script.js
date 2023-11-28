@@ -1,8 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var hamburger = document.querySelector('.hamburger-menu');
-    var navUL = document.querySelector('.site-nav-grid ul');
+function setActive(section) {
+    var aangeboden = document.querySelector('.aangeboden');
+    var gezocht = document.querySelector('.gezocht');
 
-    hamburger.addEventListener('click', function() {
-        navUL.classList.toggle('menu-open');
-    });
-});
+    if (section === 'aangeboden') {
+        aangeboden.classList.add('active');
+        gezocht.classList.remove('active');
+    } else if (section === 'gezocht') {
+        gezocht.classList.add('active');
+        aangeboden.classList.remove('active');
+    }
+}
+
+
