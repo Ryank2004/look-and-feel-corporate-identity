@@ -18,19 +18,22 @@
 
 nav { 
   & {
-    font-family: "AvantGardeGothicMedium";
+    font-family: var(--main-font);
     background-color: var(--secondary-color);
     color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 1em 2em;
     box-shadow: 0 0 0.75rem 0.15rem rgba(26, 42, 52, 0.5);
   }
 
   & h1 {
-    font-size: 1.5rem;
-    padding-left: 30px;
+    display: flex;
+  }
+
+  & span {
+    color: var(--third-color);
   }
   
   & ul {
@@ -141,13 +144,10 @@ nav {
     } 
   }
 }
-
-
-
 /* 
 
 dit moet nog gebeuren voor footer:
-- typgografie 
+- typgografie <<<
 - kleuren 
 - eventueel aanpassingen gebasseerd op feedback/suggesties 
 - streepje onder h4 nog aanpassen
@@ -201,18 +201,16 @@ footer {
     font-size: 22px;
     text-transform: capitalize;
   }
-}
-
-/* voor streepje onder h4 kopje.(Streepje vedwijnt, als beeld kleiner is dan 740px)*/
-
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  background-color: var(--third-color);
-  height: 2px;
-  width: 40px;
+  /* voor streepje onder h4 kopje.(Streepje vedwijnt, als beeld kleiner is dan 740px)*/
+  & h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: var(--third-color);
+    height: 2px;
+    width: 40px;
+  }
 }
 
 .links a {
