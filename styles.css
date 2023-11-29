@@ -55,6 +55,7 @@ nav {
 }
 
 .grid-container {
+  & {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +87,10 @@ nav {
     min-width: 100vw;
   }
 }
+& .image-containerGroot {
+ display: none;
+}
+}
 
 .image-container {
   & {
@@ -102,7 +107,8 @@ nav {
   }
 }
 
-/* begin 'marketplace' knoppen // gezocht en aangeboden */
+
+/* begin 'marketplace' knoppen // wanted en aangeboden */
 .marketplace { 
   & {
     display: flex;
@@ -114,9 +120,10 @@ nav {
     font-family: var(--main-font);
     font-weight: lighter;
   }
-  & h3:focus-within {
-    color: var(--third-color);
-  }
+}
+
+.marketplace h3:focus-within {
+  color: var(--third-color);
 }
 
 .offered,
@@ -169,10 +176,6 @@ nav {
     & ul li a:hover {
       color: var(--third-color); /* Change color on hover */
     } 
-  }
-
-  .text-container {
-    max-width: 70ch;
   }
 }
 
