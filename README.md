@@ -10,7 +10,10 @@ Welkom op onze website voor de buurtcampus.
 Het doel van de website is om een duidelijke overzicht van alle initiatieven in Amsterdam West te laten zien. Ook hebben we een pagina voor de mensen die intresse hebben in het aanbieden van eventuele initiatieven.
 
 ## Ons product 
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+
+<img width="1440" alt="Scherm­afbeelding 2023-11-29 om 18 33 23" src="https://github.com/Ryank2004/look-and-feel-corporate-identity/assets/144009662/7fa2789f-10ac-4ead-a948-c6c063356ff4">
+<img width="1440" alt="Scherm­afbeelding 2023-11-29 om 10 34 46" src="https://github.com/Ryank2004/look-and-feel-corporate-identity/assets/144009662/f68d0cfe-b4a0-40cb-9aa3-c8b34df1ce91">
+
 
 ## Bronnen
 
