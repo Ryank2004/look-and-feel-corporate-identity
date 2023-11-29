@@ -26,6 +26,7 @@ Ons project is gemaakt met:
  - Visual Studio Code
  - Figma
  - Git
+ - Javascript
    
 
 
