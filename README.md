@@ -11,8 +11,11 @@ Het doel van de website is om een duidelijke overzicht van alle initiatieven in 
 
 ## Ons product 
 
-<img width="1440" alt="Scherm­afbeelding 2023-11-29 om 18 33 23" src="https://github.com/Ryank2004/look-and-feel-corporate-identity/assets/144009662/7fa2789f-10ac-4ead-a948-c6c063356ff4">
+We zijn begonnen met het maken van een mobile first versie. Zoals je kunt zien op de eerste img, hebben we vraag en aanbod duidelijk in beeld staan. Als je op een van de buttons klikt (vraag of aanbod), dan komt de content daarvan eronder te staan. Ook heb je een google maps img, hierin is het de bedoeling dat de initiatieven uitendelijk te zien zijn, en het mogelijk is om te interacten met de initiatieven. Helemaal onderin staat onze footer.
+
 <img width="1440" alt="Scherm­afbeelding 2023-11-29 om 10 34 46" src="https://github.com/Ryank2004/look-and-feel-corporate-identity/assets/144009662/f68d0cfe-b4a0-40cb-9aa3-c8b34df1ce91">
+
+<img width="1440" alt="Scherm­afbeelding 2023-11-29 om 18 33 23" src="https://github.com/Ryank2004/look-and-feel-corporate-identity/assets/144009662/7fa2789f-10ac-4ead-a948-c6c063356ff4">
 
 
 ## Bronnen
