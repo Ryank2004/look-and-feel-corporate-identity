@@ -231,11 +231,13 @@ footer {
   & {
     display: flex;
     flex-wrap: wrap;
+    text-align:center;
     background: var(--secondary-color);
     color: var(--primary-color);
     margin-top: auto;
     padding: 60px 10%;
     font-family: var(--main-font);
+    
   }
 
   & ul {
@@ -263,7 +265,7 @@ footer {
 
 .footer-col {
   & {
-    width: 25%; /* Voor responsive maken: bij 740px 50% en bij 555px 100% doen */
+    width: 100%; /* Voor responsive maken: bij 740px 50% en bij 555px 100% doen */
   }
 
   & h4 {
@@ -299,23 +301,27 @@ footer {
 }
 /*einde footer */
 
-/* Responsive footer */
 
-@media (max-width: 740px) {
-  .footer-col {
+@media (min-width: 555px) {
+  .footer-col{
     width: 50%;
     margin-bottom: 30px;
     text-align: center;
   }
-  .footer-col h4::before {
-    all: unset;
-  }
+}
 
-  @media (max-width: 555px) {
-    .footer-col {
-      width: 100%;
-    }
+@media (min-width: 880px) {
+.footer-col{
+  width: 25%;
+}  
+}
+
+@media (min-width: 300px){
+  h4::before{
+    display: none;
+  }
+  .footer-col{
+    margin-bottom: 30px;
   }
 }
 
-/* einde responsive footer */
