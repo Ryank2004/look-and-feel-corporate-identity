@@ -17,6 +17,18 @@ We zijn begonnen met het maken van een mobile first versie. Zoals je kunt zien o
 
 <img width="1440" alt="Scherm­afbeelding 2023-11-29 om 18 33 23" src="https://github.com/Ryank2004/look-and-feel-corporate-identity/assets/144009662/7fa2789f-10ac-4ead-a948-c6c063356ff4">
 
+### Werkwijze 
+
+Ons project is gemaakt met:
+
+ - HTML
+ - CSS
+ - Visual Studio Code
+ - Figma
+ - Git
+   
+
+
 
 ## Bronnen
 
