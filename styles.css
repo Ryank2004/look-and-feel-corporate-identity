@@ -129,11 +129,6 @@ nav {
   border-bottom: var(--bottomBorder);
 }
 
-.offered:hover,
-.wanted:hover {
-  cursor: pointer;
-}
-
 .offered.active, .wanted.active {
   color: var(--third-color); /* Make the text green */
   border-bottom: 3px solid var(--third-color); /* Green underline */
